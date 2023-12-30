@@ -4,9 +4,9 @@ import random
 import sys
 import os  # os 모듈 추가
 from q import main
+
 # 폰트 파일의 절대 경로
 font_path = os.path.join('../PySNAKE/font', 'Gameplay.ttf') # 모든 컴퓨터에서 실행이 가능하도록 위치 설정을 변경
-# font_path = os.path.join('/Users/macbookpro/Downloads/SnakePRJ', 'Gameplay.ttf')
 
 # 초기화
 pygame.mixer.pre_init(22050, -16, 2, 512)
