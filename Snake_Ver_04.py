@@ -2,7 +2,7 @@ import pygame
 import time
 import random
 import sys
-import os  # os 모듈 추가
+import os
 from q import main
 
 # 폰트 파일의 절대 경로
@@ -19,7 +19,7 @@ pygame.font.init()
 font = pygame.font.Font(font_path, 32)  # 폰트 파일의 경로와 크기를 지정
 
 # 시작 메뉴 창 설정
-white = (255, 244, 238) #창 배경색
+white = (255, 244, 238)
 
 # 이미지 파일의 절대 경로
 image_path = os.path.join('../PySNAKE', 'images')  # 모든 컴퓨터에서 실행이 가능하도록 위치 설정을 변경
@@ -64,6 +64,7 @@ EAST = (1, 0)
 
 # 시간
 clock = pygame.time.Clock()
+
 # 스코어
 score = 0
 running = True
@@ -84,6 +85,7 @@ class Button:
 
 def startgame():
     main()
+
 def quitgame():
     pygame.quit()
     sys.exit()
